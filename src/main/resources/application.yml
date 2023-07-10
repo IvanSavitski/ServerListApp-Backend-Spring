@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    password: 678992
+    url: jdbc:mysql://localhost:3306/serverlistappdb
+    username: root #root@localhost
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
+
+
+
+# HOW TO KNOW MYSQL
+# USERNAME    root@localhost
+# PORT        3306
+# HOSTNAME    HOME-PC
+
+# 1) Run MySQL 8.0 Command Line Client
+# 2) Put this commands:
+#  select user();
+#  show variables where variable_name='port';
+#  show variables where variable_name='hostname';
